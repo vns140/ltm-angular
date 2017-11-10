@@ -1,27 +1,32 @@
-# GrupoLtmApp
+# Prova Grupo LTM - Vinícius Alexandre Saraiva Silva
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
+Este projeto foi gerado [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Execute `ng serve` para um servidor dev. Navegue para `http: // localhost: 4200 /`. O aplicativo irá recarregar automaticamente se você alterar qualquer um dos arquivos de origem.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Usuário e Senha para acesso
 
-## Build
+Usuario: ltm  <br/>
+Senha: 123456
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+O Usuário é criado automaticamente assimque iniciar o projeto de servidor que se localiza no repositório ltm em C#.
 
-## Running unit tests
+## O que foi desenvolvido
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1 - Criado um site utilizando SPA com Angular na versão 5.
 
-## Running end-to-end tests
+2 - Fazer uma tela de login, que irá se autenticar em uma api que retornará o token.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+3 - Criado uma tela que irá fazer uma listagem de produtos e esta tela
+só pode ser acessada se o usuário tiver o token de autenticação antes, essa listagem deverá vir
+de uma api que deverá receber e validar o token antes de devolver a listagem.
 
-## Further help
+Foi utilizado alguns pacotes para esse projeto básico de layout ng2-validation e ngx-bootstrap.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+##Ajuda adicional
+
+Importante, inicie o projeto de backend antes de iniciar o mesmo.
