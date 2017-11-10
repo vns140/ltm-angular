@@ -9,7 +9,7 @@ Execute `ng serve` para um servidor dev. Navegue para `http: // localhost: 4200 
 
 ## Usuário e Senha para acesso
 
-Usuario: ltm
+Usuario: ltm  <br/>
 Senha: 123456
 
 O Usuário é criado automaticamente assimque iniciar o projeto de servidor que se localiza no repositório ltm em C#.
