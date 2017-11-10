@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { Router } from "@angular/router";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu-login',
@@ -11,10 +11,10 @@ import { Router } from "@angular/router";
 export class MenuLoginComponent implements OnInit {
   public token;
   public user;
-  public nome: string ="";
+  public nome = '';
 
   constructor(private router: Router) {
-    
+
     this.token = localStorage.getItem('token');
     this.user = JSON.parse(localStorage.getItem('user'));
 
@@ -25,6 +25,7 @@ export class MenuLoginComponent implements OnInit {
    }
 
     logout()
+   // tslint:disable-next-line:one-line
    {
      localStorage.removeItem('token');
      localStorage.removeItem('experies');
@@ -33,8 +34,8 @@ export class MenuLoginComponent implements OnInit {
    }
 
   ngOnInit() {
-
-    if(this.user)
+    // tslint:disable-next-line:curly
+    if (this.user)
       this.nome = this.user.userName;
   }
 

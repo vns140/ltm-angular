@@ -6,17 +6,17 @@ import { RouterModule } from '@angular/router';
 import { rootRouterConfig } from './app.routes';
 import { ReactiveFormsModule } from '@angular/forms';
 
-//components Bootstrap
+// components Bootstrap
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 
-//components shared
+// components shared
 import { MainPrincipalComponent } from './shared/main-principal/main-principal.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { MenuSuperiorComponent } from './shared/menu-superior/menu-superior.component';
 import { MenuLoginComponent } from './shared/menu-login/menu-login.component';
 
-//components
+// components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ListaProdutosComponent } from './produtos/lista-produtos/lista-produtos.component';
@@ -24,10 +24,10 @@ import { InscricaoComponent } from './usuario/inscricao/inscricao.component';
 import { LoginComponent } from './usuario/login/login.component';
 
 
-//Services
+// Services
 import { UsuarioService } from './usuario/usuario.service';
 import { ProdutoService } from './produtos/produto.service';
-import { AuthService } from "./shared/auth-service";
+import { AuthService } from './shared/auth-service';
 
 
 
@@ -43,7 +43,7 @@ import { AuthService } from "./shared/auth-service";
     ListaProdutosComponent,
     InscricaoComponent,
     LoginComponent
-    
+
   ],
   imports: [
     BrowserModule,

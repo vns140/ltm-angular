@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { ProdutoService } from "../produto.service";
-import { Produto } from "../produto";
+import { ProdutoService } from '../produto.service';
+import { Produto } from '../produto';
 
 @Component({
   selector: 'app-lista-produtos',
@@ -11,9 +11,9 @@ import { Produto } from "../produto";
 export class ListaProdutosComponent implements OnInit {
 
   public produtos: Produto[];
-  public errorMessage:string="";
+  public errorMessage = '';
 
-   constructor(public produtoService: ProdutoService) { 
+   constructor(public produtoService: ProdutoService) {
 
   }
 
