@@ -1,0 +1,25 @@
+<app-menu-superior></app-menu-superior>
+<div class="container main-container">
+  <h2>Lista de Produtos</h2>
+  <br/>
+  <table class="table table-striped" *ngIf='produtos && produtos.length'>
+
+    <thead>
+      <tr >
+        <th>Produto</th>
+        <th>Descrição</th>
+        <th>Custo Unit.</th>
+        <th>Preço Venda</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let produto of produtos'>
+        <td>{{produto.nome}}</td>
+        <td>{{produto.descricao}}</td>
+        <td>{{produto.custoUnitario}}</td>
+        <td>{{produto.precoVenda}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
