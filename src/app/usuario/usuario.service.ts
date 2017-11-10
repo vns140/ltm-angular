@@ -47,7 +47,7 @@ export class UsuarioService{
         
        
         let response = this.http.post('http://localhost:49468/api/token', client,options)
-        .map(this.extractData)
+        .map(this.extractDataString)
         .catch(this.serviceError);
         
 
@@ -59,6 +59,11 @@ export class UsuarioService{
     private extractData(response: Response){
         let body = response.json();
         return body.data || {};
+    }
+
+     private extractDataString(response: Response){
+        let body = response.json();
+        return body;
     }
 
     protected  serviceError(error: Response | any){

@@ -18,7 +18,7 @@ export class ProdutoService extends ServiceBase
 
     obterTodos(): Observable<Produto[]>
     {        
-        return this.http.get(this.UrlService+"produtos")
+        return this.http.get(this.UrlService+"produtos",this.obterAuthHeader)
         .map((res: Response)=> <Produto[]>res.json())
         .catch(super.serviceError);
     }

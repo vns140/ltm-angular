@@ -93,7 +93,7 @@ export class LoginComponent implements OnInit, AfterViewInit {
       this.errors= [];
 
       localStorage.setItem('token',response.access_token);
-      localStorage.setItem('expires',response.expires_in);
+      localStorage.setItem('expires',response.experies_in);
 
       this.router.navigate(['/produtos']);
 
